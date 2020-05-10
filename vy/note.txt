@@ -1,0 +1,18 @@
+https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.2.7.RELEASE/spring-boot-cli-2.2.7.RELEASE-bin.zip
+
+PATH
+
+spring --version
+
+mkdir microservices
+cd microservices
+
+spring init --boot-version=2.2.7.RELEASE --build=gradle --java-version=14 --packaging=jar --name=product-service --package-name=io.mpsolutions.microservices.core.product --groupId=io.mpsolutions.microservices.core.product --dependencies=actuator,webflux --version=3.0.0-SNAPSHOT product-service
+
+C:\Users\donhuvy\.gradle
+gradle.properties
+org.gradle.java.home=C:\\Program Files\\Java\\jdk-14.0.1
+
+http://localhost:8080/actuator
+
+

@@ -3,17 +3,7 @@
 mkdir microservices
 cd microservices
 
-spring init \
---boot-version=2.1.0.RELEASE \
---build=gradle \
---java-version=1.8 \
---packaging=jar \
---name=product-service \
---package-name=se.magnus.microservices.core.product \
---groupId=se.magnus.microservices.core.product \
---dependencies=actuator,webflux \
---version=1.0.0-SNAPSHOT \
-product-service
+spring init --boot-version=2.2.7.RELEASE --build=gradle --java-version=14 --packaging=jar --name=product-service --package-name=io.mpsolutions.microservices.core.product --groupId=io.mpsolutions.microservices.core.product --dependencies=actuator,webflux --version=3.0.0-SNAPSHOT product-service
 
 spring init \
 --boot-version=2.1.0.RELEASE \
